@@ -1,0 +1,63 @@
+.reveiws {
+  position: relative;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 610px;
+  width: 540px;
+  margin: auto;
+  @include for-large-up {
+    top: -80px;
+    flex-direction: row;
+    width: 1120px;
+    height: 280px;
+  }
+}
+
+.reveiw {
+  position: relative;
+  width: 540px;
+  height: 280px;
+  background-color: $color-background;
+  &__mark {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: inline-block;
+    width: 60px;
+    height: 46px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png);
+  }
+  &__person {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  &__official {
+    margin-left: 20px;
+  }
+  &__name {
+    color: $color-text-heading;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  &__position {
+    color: $color-text-position;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  &__description-mobile {
+    @include for-large-up {
+      display: none;
+    }
+  }
+  &__description-desk {
+    @include for-large-down {
+      display: none;
+    }
+  }
+}

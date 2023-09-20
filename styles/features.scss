@@ -1,0 +1,106 @@
+.features {
+  width: 520px;
+  margin: auto;
+  margin-top: 125px;
+  @include for-large-up {
+    width: 1165px;
+    height: 495px;
+    margin: 0;
+    margin-left: 120px;
+    margin-top: 120px;
+  }
+  &__title {
+    color: $color-text-heading;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0;
+    @include for-large-up {
+      margin-left: 40px;
+    }
+  }
+  &__line {
+    width: 80px;
+    height: 1px;
+    margin: 0;
+    margin-top: 10px;
+    background: #1968fc;
+    box-shadow: 0px 2px 0px 0px #d1e1fe;
+  }
+  &__list {
+    @include for-large-up {
+      display: flex;
+      margin-left: 40px;
+    }
+  }
+}
+
+.feature {
+  position: relative;
+  height: 200px;
+  margin-top: 60px;
+  &:first-child {
+    margin-top: 48px;
+  }
+  @include for-large-up {
+    width: 320px;
+    height: 290px;
+    &:nth-child(2) {
+      margin-left: 74px;
+      margin-top: 90px;
+    }
+    &:last-child {
+      margin-left: 86px;
+      margin-top: 130px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    background-color: #f3f7ff;
+  }
+  &__image {
+    width: 80px;
+    height: 80px;
+    @include for-large-up {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &__title {
+    color: $color-text-heading;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 10px;
+    @include for-large-up {
+      line-height: 20px;
+      margin-left: 20px;
+    }
+  }
+  &__description {
+    color: $color-text-heading;
+    background-color: $color-background;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    height: 120px;
+    padding: 30px 40px;
+    @include for-large-up {
+      height: 170px;
+      padding: 40px;
+    }
+  }
+  &__picture-square {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png);
+  }
+}

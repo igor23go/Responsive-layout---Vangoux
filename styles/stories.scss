@@ -1,0 +1,140 @@
+.stories {
+  width: 520px;
+  margin: auto;
+  margin-top: 60px;
+  @include for-large-up {
+    position: relative;
+    top: -15px;
+    width: 1160px;
+    margin: 0;
+    margin-left: 120px;
+  }
+  &__title {
+    color: $color-text-heading;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+    @include for-large-up {
+      margin-left: 40px;
+    }
+  }
+  &__line {
+    width: 80px;
+    height: 1px;
+    margin: 0;
+    background: $color-line-workflow;
+    box-shadow: 0px 2px 0px 0px #d1e1fe;
+    margin-left: 3px;
+    margin-top: 10px;
+    @include for-large-up {
+      margin-left: 0;
+    }
+  }
+  &__container {
+    @include for-large-up {
+      display: flex;
+    }
+  }
+}
+
+.story-card {
+  margin-top: 38px;
+  @include for-large-up {
+    margin-top: 48px;
+    margin-left: 40px;
+  }
+  &:last-child {
+    margin-top: 40px;
+    @include for-large-up {
+      margin-top: 48px;
+      margin-left: 150px;
+    }
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+  &__picture {
+    width: 40px;
+    height: 33px;
+  }
+  &__title {
+    color: $color-text-story-card;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 20px;
+  }
+  &__text {
+    width: 460px;
+    height: 210px;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    @include for-large-up {
+      width: 420px;
+      height: 240px;
+    }
+  }
+  &__text-second {
+    width: 460px;
+    height: 240px;
+    margin-top: 19px;
+    margin-left: 60px;
+    @include for-large-up {
+      width: 420px;
+      height: 240px;
+    }
+  }
+  &__description {
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+    @include for-large-up {
+      display: none;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__description-second {
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__description-desktop {
+    color: $color-text-black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+    @include for-large-down {
+      display: none;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

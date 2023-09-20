@@ -1,0 +1,81 @@
+.page-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 130px;
+  background-color: $color-background-footer;
+  margin-top: 61px;
+  margin-bottom: 90px;
+  @include for-large-up {
+    margin-top: 105px;
+    margin-bottom: 0;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 480px;
+    margin-left: 70px;
+    @include for-large-down {
+      display: none;
+    }
+  }
+  &__navigation-item {
+    color: $color-text-black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  &__icon-facebook {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconFacebook.png);
+    margin-left: 70px;
+  }
+  &__icon-instagram {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconInstagram.png);
+    margin-left: 38px;
+    @include for-large-up {
+      margin-left: 35px;
+    }
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 55px;
+    height: 60px;
+    @include for-large-up {
+      right: 160px;
+      width: 90px;
+      height: 100px;
+    }
+  }
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-left: 90px;
+  @include for-large-up {
+    margin-left: 160px;
+  }
+
+  &__image-logo {
+    width: 50px;
+    height: 50px;
+  }
+  &__logo-text {
+    width: 200px;
+    color: $color-text-logo;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+  }
+}

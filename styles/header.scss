@@ -1,0 +1,45 @@
+.page-header {
+  padding-top: 40px;
+  padding-left: 80px;
+  @include for-large-up {
+    display: flex;
+    max-width: 1120px;
+    margin: auto;
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 540px;
+    margin-left: auto;
+    @include for-large-down {
+      display: none;
+    }
+  }
+  &__navigation-item {
+    color: $color-text-black;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &__upload-btn {
+    width: 180px;
+    color: $color-text-white;
+    background-color: $color-background-button-upload;
+    text-align: center;
+    text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 0;
+    border: 0;
+    margin-left: 20px;
+    @include for-large-down {
+      display: none;
+    }
+  }
+}

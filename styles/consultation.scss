@@ -1,0 +1,90 @@
+.consultation {
+  width: 640px;
+  height: 460px;
+  margin-top: 60px;
+
+  @include for-large-up {
+    position: relative;
+    width: 1440px;
+    height: 585px;
+    margin-top: 120px;
+  }
+  @include for-large-down {
+    background-color: $color-background-consultation;
+  }
+  &__container {
+    width: 520px;
+    margin: auto;
+    padding-top: 60px;
+    @include for-large-up {
+      background-color: $color-background-consultation;
+      width: 1440px;
+      height: 450px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &__title {
+    color: $color-text-white;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+    @include for-large-up {
+      padding-top: 80px;
+      padding-left: 160px;
+    }
+  }
+  &__line {
+    width: 80px;
+    height: 1px;
+    background: $color-background;
+    box-shadow: 0px 2px 0px 0px #6a9eff;
+    margin-left: 0;
+    margin-top: 10px;
+    @include for-large-up {
+      margin-left: 120px;
+    }
+  }
+  &__description {
+    color: $color-text-white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 38px;
+    @include for-large-up {
+      width: 640px;
+      height: 80px;
+      margin: 0;
+      margin-top: 48px;
+      margin-left: 160px;
+    }
+  }
+  &__button {
+    width: 320px;
+    height: 50px;
+    color: $color-text-logo;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 0;
+    border: 0;
+    margin-top: 40px;
+    @include for-large-up {
+      margin-left: 160px;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    width: 599px;
+    height: 546px;
+    @include for-large-down {
+      display: none;
+    }
+  }
+}
