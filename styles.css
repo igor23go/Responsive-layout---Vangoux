@@ -381,7 +381,7 @@
 }
 .workflow__line-horizontal-first {
   position: absolute;
-  left: 340px;
+  left: 365px;
   top: 220px;
 }
 @media screen and (max-width: 1023px) {
