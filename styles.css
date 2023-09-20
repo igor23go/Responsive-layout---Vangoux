@@ -38,7 +38,6 @@
     max-width: 1120px;
     margin: auto;
     padding: 0;
-    padding-top: 30px;
   }
 }
 .page-header__navigation {
@@ -1171,6 +1170,11 @@ html {
 
 .backDecor {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
+}
+@media screen and (min-width: 1024px) {
+  .backDecor {
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .backDecor {
