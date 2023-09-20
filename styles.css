@@ -15,7 +15,7 @@
   margin-left: 10px;
 }
 
-.reveiw-comment {
+.review-comment {
   color: #11223f;
   font-size: 16px;
   font-weight: 400;
@@ -209,7 +209,7 @@
   height: 120px;
 }
 
-.reveiws {
+.reviews {
   position: relative;
   top: -10px;
   display: flex;
@@ -220,7 +220,7 @@
   margin: auto;
 }
 @media screen and (min-width: 1024px) {
-  .reveiws {
+  .reviews {
     top: -80px;
     flex-direction: row;
     width: 1120px;
@@ -228,13 +228,13 @@
   }
 }
 
-.reveiw {
+.review {
   position: relative;
   width: 540px;
   height: 280px;
   background-color: #fff;
 }
-.reveiw__mark {
+.review__mark {
   position: absolute;
   top: 40px;
   right: 40px;
@@ -243,34 +243,34 @@
   height: 46px;
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png);
 }
-.reveiw__person {
+.review__person {
   display: flex;
   align-items: center;
   margin-top: 40px;
   margin-left: 40px;
 }
-.reveiw__official {
+.review__official {
   margin-left: 20px;
 }
-.reveiw__name {
+.review__name {
   color: #11223f;
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
 }
-.reveiw__position {
+.review__position {
   color: #1967fa;
   font-size: 14px;
   font-weight: 600;
   line-height: 30px;
 }
 @media screen and (min-width: 1024px) {
-  .reveiw__description-mobile {
+  .review__description-mobile {
     display: none;
   }
 }
 @media screen and (max-width: 1023px) {
-  .reveiw__description-desk {
+  .review__description-desk {
     display: none;
   }
 }
