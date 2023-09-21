@@ -1,7 +1,6 @@
 .logo {
   display: flex;
   align-items: center;
-  width: 180px;
   height: 50px;
 }
 .logo__image {
@@ -96,7 +95,7 @@
   height: 120px;
   color: #11223f;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 60px;
   letter-spacing: 1px;
   margin: 0;
